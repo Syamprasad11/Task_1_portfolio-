@@ -3,88 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLearn | Empower Your Future</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
+
 <body>
 
-    <!-- HEADER -->
     <header>
-        <div class="logo">EduLearn</div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#why">Why Us</a>
-            <a href="#contact">Contact</a>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#PROJECTS">MY PROJECTS</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
         </nav>
+
+        <div class="header-content">
+            <h1>Hi, I am Syamprasad </h1>
+            <p>Final Year Computer Science Student</p>
+            <form action="#PROJECTS">
+                <input type="submit" value="View My Works" />
+            </form>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Unlock Knowledge. Build Your Future.</h1>
-            <p>Join expert-led online courses, improve your skills, and  
-                achieve your academic and career goals. Learning starts here.</p>
-            <a href="#" class="btn">Start Learning</a>
-        </div>
-
-        <div class="hero-img">
-            <img src="images/education-hero.png" alt="Education Image">
-        </div>
+    <!-- ABOUT SECTION -->
+    <section id="ABOUT">
+        <h2>About Me</h2>
+        <p>I am currently a third-year BSc Computer Science student at Victoria College, Palakkad. With a strong foundation in web development and a diverse skill set in programming languages such as C, C++, Java, and Python, I am passionate about leveraging technology to solve real-world problems.</p>
+        <p>My academic journey has provided me with hands-on experience in building dynamic web applications and managing databases with MySQL. I thrive in collaborative environments and enjoy tackling complex challenges through innovative solutions.</p>
+        <p>In addition to my technical skills, I am continuously exploring new technologies and methodologies to stay updated with industry trends. I am enthusiastic about opportunities that allow me to apply my knowledge and contribute to impactful projects.</p>
     </section>
 
-    <!-- WHY CHOOSE US -->
-    <section id="why" class="why">
-        <h2>Why Choose EduLearn?</h2>
+    <!-- PROJECT SECTION -->
+    <div id="PROJECTS">
+        <h2>Projects</h2>
 
-        <div class="why-boxes">
+        <div class="projects">
 
-            <div class="box">
-                <h3>Expert Mentors</h3>
-                <p>Learn from highly qualified teachers and industry professionals.</p>
-            </div>
+            <!-- Project 1 -->
+            <a href="https://a-j-a-y-nath.github.io/TO-DO-LIST/" style="text-decoration: none;">
+                <div class="project">
+                    <h3>TO-DO-LIST</h3>
+                    <img src="./image/todo.jpeg" alt="To-Do" width="150px" height="120px">
+                    <p>A to-do list is a tool to organize tasks by listing them out, helping you stay focused and track what needs to be done.</p>
+                </div>
+            </a>
 
-            <div class="box">
-                <h3>Smooth Learning</h3>
-                <p>Access your courses, notes, and assignments easily from anywhere.</p>
-            </div>
+            <!-- Project 2 -->
+            <a href="https://a-j-a-y-nath.github.io/Random-password-generator/" style="text-decoration: none;">
+                <div class="project">
+                    <h3>RANDOM-PASSWORD GENERATOR</h3>
+                    <img src="./image/password generator.jpeg" alt="password_generator" width="150px" height="120px">
+                    <p>A random password generator creates a secure, unpredictable password using letters, numbers, and symbols.</p>
+                </div>
+            </a>
 
-            <div class="box">
-                <h3>Affordable Courses</h3>
-                <p>High-quality learning at student-friendly prices and flexible plans.</p>
-            </div>
+            <!-- Project 3 -->
+            <a href="https://a-j-a-y-nath.github.io/Number_guessing_game/" style="text-decoration: none;">
+                <div class="project">
+                    <h3>NUMBER GUESSING GAME</h3>
+                    <img src="./image/numguess.jpeg" alt="number guessing" width="150px" height="120px">
+                    <p>A fun interactive game where players guess a randomly chosen number within a range.</p>
+                </div>
+            </a>
 
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-
-        <div class="contact-boxes">
-
-            <div class="c-box">
-                <h3>Email</h3>
-                <p>edulearn@gmail.com</p>
-            </div>
-
-            <div class="c-box">
-                <h3>Phone</h3>
-                <p>+91 98765 43210</p>
-            </div>
-
-            <div class="c-box">
-                <h3>Location</h3>
-                <p>Chennai, India</p>
-            </div>
+            <!-- Project 4 -->
+            <a href="https://a-j-a-y-nath.github.io/calulator-web/" style="text-decoration: none;">
+                <div class="project">
+                    <h3>CALCULATOR</h3>
+                    <img src="./image/calculator.avif" alt="calculator" width="150px" height="120px">
+                    <p>A calculator that performs mathematical operations such as addition, subtraction, multiplication, and division.</p>
+                </div>
+            </a>
 
         </div>
+    </div>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>
+            <a class="resume-btn" 
+               href="resume.pdf" 
+               download
+               style="text-decoration: none;
+                      background-color: black;
+                      color: white;
+                      padding: 10px 20px;
+                      border-radius: 5px;">
+               Download My Resume
+            </a>
+        </p>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <div id="CONTACT">
+        <h2>Contact Me</h2>
+
+        <form action="data.php" method="POST">
+
+            <label for="cname">Name:</label><br>
+            <input type="text" name="cname" id="cname"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="number">Contact No:</label><br>
+            <input type="number" name="number" id="number"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message"></textarea><br><br>
+
+            <input type="submit" value="Send message" style="background-color: red; color: white; border: none; border-radius: 3px;">
+        </form>
+    </div>
 
     <!-- FOOTER -->
-    <footer>
-        <p>© 2025 EduLearn. All Rights Reserved.</p>
-    </footer>
+    <div class="footer" style="background-color: black; color: white; text-align: center; padding: 10px;">
+        <p>&copy; 2025 Syamprasad. All rights reserved.</p>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
